@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Tic Tac Toe
+{% endblock %}
+
+{% block body %}
+    <table class="flex-container">
+        {% for i in range(row) %}
+            <tr>
+                {% for j in range(col) %}
+                    <td>
+                        {% if game[i][j] %}
+                            {{ game[i][j] }}
+                        {% else %}
+                            <a href="{{ url_for('play', row=i, col=j) }}">Play {{ turn }} here.</a>
+                        {% endif %}
+                    </td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

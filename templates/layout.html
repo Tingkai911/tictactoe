@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">        <style>
+            table {
+                border-collapse: collapse;
+            }
+
+            td {
+                border: 1px solid black;
+                width: 150px;
+                height: 150px;
+                font-size: 30px;
+                text-align: center;
+            }
+
+            td > a {
+                font-size: 18px;
+            }
+            .flex-container {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+            }
+        </style>
+    </head>
+    <body>
+      {% block body %}{% endblock %}
+    </body>
+</html>

@@ -172,6 +172,7 @@ def minimax(board, turn):
            stepcol = col
     return [value, steprow, stepcol]
 
+
 def findempty(board):
     moves = []
     for i in range(len(board["board"])):
